@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Reset and base settings */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body Layout */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Links */
+a {
+  @apply font-medium text-blue-600 transition;
+}
+
+a:hover {
+  @apply text-blue-800;
+}
+
+/* Buttons */
+button {
+  @apply rounded border border-transparent px-4 py-2 text-white font-medium bg-blue-700 hover:bg-blue-800 transition;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-gray-900;
+}
+
+/* Optional – remove Tailwind override shadows on form fields */
+input, textarea {
+  @apply outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
